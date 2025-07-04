@@ -5,6 +5,9 @@ import 'core/utils/app_theme.dart';
 import 'features/ui/auth/login/login_screen.dart';
 import 'features/ui/auth/register/register_screen.dart';
 import 'features/ui/pages/home_screen/home_screen.dart';
+import 'features/ui/pages/product_details_screen/product_details_screen.dart';
+import 'features/ui/pages/cart_screen/cart_screen.dart';
+
 
 
 void main() {
@@ -26,6 +29,8 @@ class MyApp extends StatelessWidget {
             AppRoutes.loginRoute: (context) => LoginScreen(),
             AppRoutes.registerRoute: (context) => RegisterScreen(),
             AppRoutes.homeRoute: (context) => const HomeScreen(),
+            AppRoutes.productRoute: (context) => ProductDetailsScreen(),
+            AppRoutes.cartRoute: (context) => const CartScreen(),
           },
           theme: AppTheme.lightTheme,
         );
