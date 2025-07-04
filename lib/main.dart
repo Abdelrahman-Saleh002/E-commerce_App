@@ -4,6 +4,8 @@ import 'core/utils/app_routes.dart';
 import 'core/utils/app_theme.dart';
 import 'features/ui/auth/login/login_screen.dart';
 import 'features/ui/auth/register/register_screen.dart';
+import 'features/ui/pages/home_screen/home_screen.dart';
+
 
 void main() {
   runApp(MyApp());
@@ -23,6 +25,7 @@ class MyApp extends StatelessWidget {
           routes: {
             AppRoutes.loginRoute: (context) => LoginScreen(),
             AppRoutes.registerRoute: (context) => RegisterScreen(),
+            AppRoutes.homeRoute: (context) => const HomeScreen(),
           },
           theme: AppTheme.lightTheme,
         );
